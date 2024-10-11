@@ -1,0 +1,369 @@
+
+body
+{
+  background-image: repeating-linear-gradient(CadetBlue, Peru, CadetBlue);
+  color: GhostWhite;
+}
+
+h1
+{
+  color: GhostWhite;
+  font-size: 2.6em;
+  font-family: 'Astloch', cursive;
+
+  text-shadow: 0px 3px 5px Azure;
+}
+
+h2
+{
+  font-size: 2.3em;
+  font-family: 'Astloch', cursive;
+  color: Azure;
+}
+
+h3, h4, h5, h6, p, ul, li, a
+{
+  font-family: 'Trykker', serif;
+  color: Azure;
+}
+
+h3
+{
+  font-size: 1.77em;
+}
+
+h4
+{
+  font-size: 1.66em;
+}
+
+h5
+{
+  font-size: 1.42em;
+}
+
+h6
+ {
+  font-size: 0.88em;
+}
+
+p
+{
+    font-size: 1.05em;
+}
+
+
+.center-text
+{
+  text-align: center;
+}
+.biggerNumber {
+  font-size: 150%;
+}
+
+ .image600 {
+   border: medium rgba(0,0,0,0.5) outset;
+   max-width: 350px;
+   width: 100%;
+
+ }
+ .section {
+   border: thin Azure groove;
+   border-radius: 5px;
+ }
+.flex-borders {
+
+  border: thin Azure dotted;
+  border-radius: 5px;
+  }
+.contrast-area {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+.contrast-text {
+    color: Black;
+  }
+#url {
+    padding-left: 10px;
+  }
+  #welcome-header {
+    font-size:2.6em;
+  }
+
+
+
+  /* linkss CSS*/
+  a {
+     border-radius: 5px;
+     text-shadow: 0px 4px 6px Azure;
+    }
+
+  a:link, a:visited {
+    color: GhostWhite;
+    background-color: rgba(0,0,0, 0.7);
+    text-decoration: none;
+  }
+
+  a:hover, a:active {
+
+     color: Black !important;
+      text-shadow: 0px 4px 6px Black;
+      background-color: rgba(255,255,255, 0.7);
+      transition: all 0.3s ease-in;
+  }
+  /* navigation bar CSS*/
+#navbar {
+  border: medium double LightCoral;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.nav {
+     text-shadow: 0px 4px 6px Azure;
+  }
+.nav-title-shadow {
+  font-size:2.75em;
+    text-shadow: 0px 3px 10px Azure;
+}
+.ul-nav {
+    display:  flex;
+      padding: 0px;
+      list-style-type: none;
+      text-decoration:  overline;
+    }
+nav li{
+  border: thin GhostWhite dotted;
+  border-radius: 5px;
+
+      margin-top: 30px;
+      padding-left: 20px;
+      margin-right:0px;
+    }
+nav ul a {
+ border: thin CadetBlue dotted;
+  border-radius: 5px;
+
+    padding-top: 25px;
+      padding-right: 3px;
+      padding-left: 18px;
+    }
+.nav-title {
+      background: rgba(0, 0, 0, 0.4);
+      text-align:  justify;
+      border: medium double Black;
+      border-radius: 5px; }
+.nav-link-box {
+  padding-top: 5px;
+      background: rgba(255,255,255, 0.3);
+    }
+
+.sublink {
+  font-size: 0.9em;
+  padding: 0px 5px 0px 5px !important;
+}
+
+
+
+
+/* //BUTTON CSS// */
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+.animate-button {
+  padding:   20px;
+  animation: pulse 7s linear infinite alternate,
+             rotate 3s ease-in-out infinite alternate ;
+}
+@keyframes pulse {
+
+0%, 100% {
+background-color: tomato}
+
+50% {
+  background-color: slateblue;
+ }
+}
+@keyframes rotate {
+0%{
+transform: rotate(0deg);
+}
+30%{
+transform: rotate(-5deg);
+}
+
+100% {
+  transform:rotate(3deg);
+ }
+}
+
+a.button-1 {
+display: inline-block;
+
+border: medium solid GhostWhite;
+color:        Black;
+background-color: rgba(0,0,0, 0.7);
+
+transition: all 0.3s;
+}
+
+a.button-1:hover {
+
+  border: medium solid Azure;
+  color: Azure !important;
+  background-color: rgba(0,0,0, 0.5);
+
+ transition: all 0.3s;
+}
+/* //END BUTTON CSS// */
+
+
+
+
+
+
+/* regular bullets override? */
+#display-bullets {
+  list-style-type:  circle;
+  display:  list-item;
+}
+
+.quote {
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+
+
+
+
+
+/* BEGIN GALLERY CSS */
+  /* image gallery classes */
+  .row-height {
+    height: 70vh;
+  }
+
+  .main-image{
+
+  }
+
+  .image-src-display {
+    border: medium double LightCoral;
+
+    padding: 1px;
+  }
+
+
+
+.galleria {
+
+  padding: 20px;
+  border-radius: 5px;
+  margin:auto;
+  background-color: rgba(30,30,30,0.6)
+}
+.main-box {
+  height: 100%;
+  width: 100%;
+  border: thick Azure groove;
+}
+
+
+
+
+/* //scrolling thumbnails */
+.scroll {
+ background-color: BLack;
+ height:100%;
+ scroll-behavior: smooth;
+ overflow-y: scroll;
+ scrollbar-color: rgba(0,0,0,0.5) rgba(240,128,128,0.5);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.gallery-thumbnail {
+  width:100%;
+  max-width:100%;
+  display: block;
+  overflow: hidden;
+    filter: hue-rotate(-100deg);
+    opacity: 0.5;
+  transition-duration: 2s;
+}
+
+.image-card {
+
+
+  border: thin Azure ridge;
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  display:block;
+  position: relative;
+  float:  right;
+}
+
+
+.image-card:hover img{
+  transform: scale(2.6);
+  filter: hue-rotate(0deg);
+  transition-timing-function: ease-out;
+  transition-duration: 3s;
+    opacity: 1;
+}
+.image-card:hover span{
+  color: tomato;
+  display: block;
+  transition-duration: 1s;
+}
+
+.title {
+  border: medium double Tomato;
+  position: absolute;
+  display: block;
+
+  display: none;
+  left: 50%;
+  margin-right: auto;
+  margin-left: auto;
+ top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight:  200;
+  font-size: 1em;
+  text-shadow: 1px 5px 10px Black;
+  transition-duration:2s;
+}
+
+/* END GALLERY CSS */
+
+
+
+/* GRADIENTS :) */
+.gradient-1 {
+
+background: rgba(0,0,0, 0.5);
+}
+
+
+.color {
+  border: thin dotted GhostWhite;
+}
+
+.color-border {
+  border: thin GhostWhite groove;
+  border-radius: 5px;
+}
+
+
+#colorRect {
+    margin: auto;
+    border-radius: 5px;
+    height:40px;
+    width: 75%;
+}
